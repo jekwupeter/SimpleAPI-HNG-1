@@ -9,7 +9,7 @@ namespace SimpleAPI_HNG_1.Controllers
     [Route("[controller]")]
     public class ClientController : ControllerBase
     {
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "api")]
         public async Task<string> Get(string slack_name, string track)
         {
             var user = new UserModel
